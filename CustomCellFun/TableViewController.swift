@@ -53,10 +53,9 @@ class TableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! SongCell
         
-        cell.backgroundColor = UIColor.gray
-
         let song = thrillerAlbum[indexPath.row]
         
+        cell.backgroundColor = UIColor.gray
         cell.nameOfSongLabel.text? = song.name
         cell.lengthOfSongLabel.text? = song.length
         
